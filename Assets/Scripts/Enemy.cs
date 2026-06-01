@@ -10,6 +10,7 @@ public class Enemy : MonoBehaviour
     public float stopY = 3.71f;
 
     int direction = 1;
+    bool isDead = false;
 
     [Header("Activación")]
     public float activationY = 5f; // cuando se vuelve "activo"
@@ -123,6 +124,15 @@ public class Enemy : MonoBehaviour
 
     void Die()
     {
+        if (isDead)
+        {
+            return;
+        }
+
+        isDead = true;
+
+        ScoreManager.instance.AddScore(100);
+
         Destroy(gameObject);
     }
 }
