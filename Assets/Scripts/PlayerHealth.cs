@@ -3,6 +3,7 @@ using UnityEngine;
 public class PlayerHealth : MonoBehaviour
 {
     public int health = 5;
+    bool isDead = false;
 
     public void TakeDamage(int damage)
     {
@@ -18,7 +19,15 @@ public class PlayerHealth : MonoBehaviour
 
     void Die()
     {
-        Debug.Log("Player murió");
+        if (isDead)
+        {
+            return;
+        }
+
+        isDead = true;
+
+        GameManager.instance.GameOver();
+
         Destroy(gameObject);
     }
 }
