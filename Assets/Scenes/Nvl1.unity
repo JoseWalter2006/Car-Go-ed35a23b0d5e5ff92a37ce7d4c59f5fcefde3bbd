@@ -234,6 +234,7 @@ GameObject:
   m_Component:
   - component: {fileID: 10523369}
   - component: {fileID: 10523370}
+  - component: {fileID: 10523371}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -315,6 +316,21 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &10523371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 10523368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fcb325191442764f846e3cbba705f82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerSprite
+  vida3: {fileID: -7276305419497297254, guid: c8e6253f9a7d29a4b82e4fd4c475571b, type: 3}
+  vida2: {fileID: -315679286985827012, guid: c8e6253f9a7d29a4b82e4fd4c475571b, type: 3}
+  vida1: {fileID: 222385706299901793, guid: c8e6253f9a7d29a4b82e4fd4c475571b, type: 3}
 --- !u!1 &41911803
 GameObject:
   m_ObjectHideFlags: 0
